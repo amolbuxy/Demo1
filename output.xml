@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200824 13:45:51.859" generator="Robot 3.2.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\AMOL\Desktop\RF\demo" id="s1" name="Demo">
+<suite source="C:\Users\AMOL\Desktop\RF\demo\first.robot" id="s1-s1" name="First">
+<test id="s1-s1-t1" name="TC_05">
+<kw name="Add to Cart">
+<kw name="LogIn On Portal">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200824 13:45:52.678" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com'.</msg>
+<status status="PASS" endtime="20200824 13:46:07.074" starttime="20200824 13:45:52.677"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200824 13:46:09.253" starttime="20200824 13:46:07.075"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_PAGE}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:09.254" level="INFO">Clicking element '//a[@class='ico-login']'.</msg>
+<status status="PASS" endtime="20200824 13:46:09.845" starttime="20200824 13:46:09.253"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ENTER_EMAIL}</arg>
+<arg>g007@gmail.com</arg>
+</arguments>
+<msg timestamp="20200824 13:46:09.848" level="INFO">Typing text 'g007@gmail.com' into text field '//input[@id='Email']'.</msg>
+<status status="PASS" endtime="20200824 13:46:09.952" starttime="20200824 13:46:09.846"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ENTER_PASSWORD}</arg>
+<arg>xyz123</arg>
+</arguments>
+<msg timestamp="20200824 13:46:09.953" level="INFO">Typing text 'xyz123' into text field '//input[@id='Password']'.</msg>
+<status status="PASS" endtime="20200824 13:46:10.070" starttime="20200824 13:46:09.952"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:10.071" level="INFO">Clicking button '//input[@value='Log in']'.</msg>
+<status status="PASS" endtime="20200824 13:46:10.937" starttime="20200824 13:46:10.071"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>LogIn Successful</arg>
+</arguments>
+<status status="PASS" endtime="20200824 13:46:10.939" starttime="20200824 13:46:10.937"></status>
+</kw>
+<status status="PASS" endtime="20200824 13:46:10.940" starttime="20200824 13:45:52.677"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BOOKS}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:10.942" level="INFO">Clicking element '//a[contains(text(),'Books')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:11.865" starttime="20200824 13:46:10.941"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_BOOK}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:11.867" level="INFO">Clicking element '//a[text()='Fiction']/ancestor::div[contains(@class,'details')]//input'.</msg>
+<status status="PASS" endtime="20200824 13:46:11.931" starttime="20200824 13:46:11.866"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${COMPUTERS}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:11.933" level="INFO">Clicking element '//a[contains(text(),'Computers')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:12.872" starttime="20200824 13:46:11.932"></status>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<doc>Clicks an image identified by ``locator``.</doc>
+<arguments>
+<arg>${Notebook}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:12.873" level="INFO">Clicking image '//img[@alt='Picture for category Notebooks']'.</msg>
+<status status="PASS" endtime="20200824 13:46:13.653" starttime="20200824 13:46:12.872"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_COMPUTER}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:13.654" level="INFO">Clicking element '//input[@type='button' and @value='Add to cart']'.</msg>
+<status status="PASS" endtime="20200824 13:46:13.718" starttime="20200824 13:46:13.653"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ELECTRONICS}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:13.720" level="INFO">Clicking element '//a[contains(text(),'Electronics')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:14.614" starttime="20200824 13:46:13.719"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CELL_PHONES}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:14.615" level="INFO">Clicking element '//img[@title='Show products in category Cell phones']'.</msg>
+<status status="PASS" endtime="20200824 13:46:15.851" starttime="20200824 13:46:14.614"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_CELLPHONES}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:15.853" level="INFO">Clicking element '//a[text()='Smartphone']/ancestor::div[contains(@class,'details')]//input'.</msg>
+<status status="PASS" endtime="20200824 13:46:15.915" starttime="20200824 13:46:15.852"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${APPAREL_SHOES}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:15.917" level="INFO">Clicking element '//a[contains(text(),'Apparel &amp; Shoes')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:18.074" starttime="20200824 13:46:15.916"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_APPAREL}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:18.077" level="INFO">Clicking element '(//input[@value='Add to cart'])[3]'.</msg>
+<status status="PASS" endtime="20200824 13:46:18.135" starttime="20200824 13:46:18.075"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${DIGITAL_DOWNLOADS}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:18.137" level="INFO">Clicking element '//a[contains(text(),'Digital downloads')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:19.098" starttime="20200824 13:46:18.136"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_DOWNLOAD}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:19.099" level="INFO">Clicking element '//a[contains(text(),'3rd Album')]/ancestor::div[contains(@class,'details')]//input'.</msg>
+<status status="PASS" endtime="20200824 13:46:19.166" starttime="20200824 13:46:19.099"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${JEWELRY}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:19.167" level="INFO">Clicking element '//a[contains(text(),'Jewelry')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:20.356" starttime="20200824 13:46:19.167"></status>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<doc>Clicks an image identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_JEWELRY}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:20.402" level="INFO">Clicking image '//img[@alt='Picture of Black &amp; White Diamond Heart']'.</msg>
+<status status="PASS" endtime="20200824 13:46:22.362" starttime="20200824 13:46:20.401"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD-TO_CART_JEWELRY2}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:22.364" level="INFO">Clicking element '//input[contains(@id,'add-to-cart-button-14')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:22.429" starttime="20200824 13:46:22.363"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${GIFT_CARDS}</arg>
+</arguments>
+<status status="PASS" endtime="20200824 13:46:22.463" starttime="20200824 13:46:22.430"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${GIFT_CARDS}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:22.464" level="INFO">Clicking element '//a[contains(text(),'Gift Cards')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:23.271" starttime="20200824 13:46:22.464"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${ADD_TO_CART_GIFTCARD}</arg>
+</arguments>
+<status status="PASS" endtime="20200824 13:46:23.575" starttime="20200824 13:46:23.272"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_GIFTCARD}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:23.577" level="INFO">Clicking element '//a[contains(text(),'$25 Virtual Gift Card')]/ancestor::div[contains(@class,'details')]//input'.</msg>
+<status status="PASS" endtime="20200824 13:46:23.641" starttime="20200824 13:46:23.576"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${RECIPIENT_NAME}</arg>
+</arguments>
+<status status="PASS" endtime="20200824 13:46:24.831" starttime="20200824 13:46:23.641"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${RECIPIENT_NAME}</arg>
+<arg>RECIPIENT</arg>
+</arguments>
+<msg timestamp="20200824 13:46:24.833" level="INFO">Typing text 'RECIPIENT' into text field '//input[@id='giftcard_2_RecipientName']'.</msg>
+<status status="PASS" endtime="20200824 13:46:24.953" starttime="20200824 13:46:24.832"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${RECIPIENT_EMAIL}</arg>
+<arg>RECIPIENT@gmail.com</arg>
+</arguments>
+<msg timestamp="20200824 13:46:24.954" level="INFO">Typing text 'RECIPIENT@gmail.com' into text field '//input[@id='giftcard_2_RecipientEmail']'.</msg>
+<status status="PASS" endtime="20200824 13:46:25.138" starttime="20200824 13:46:24.954"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SENDER_NAME}</arg>
+<arg>Sender</arg>
+</arguments>
+<msg timestamp="20200824 13:46:25.139" level="INFO">Typing text 'Sender' into text field '//input[@id='giftcard_2_SenderName']'.</msg>
+<status status="PASS" endtime="20200824 13:46:25.322" starttime="20200824 13:46:25.138"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SENDER_EMAIL}</arg>
+<arg>sender@gmail.com</arg>
+</arguments>
+<msg timestamp="20200824 13:46:25.324" level="INFO">Typing text 'sender@gmail.com' into text field '//input[@id='giftcard_2_SenderEmail']'.</msg>
+<status status="PASS" endtime="20200824 13:46:25.451" starttime="20200824 13:46:25.323"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${MESSAGE}</arg>
+<arg>HELLO</arg>
+</arguments>
+<msg timestamp="20200824 13:46:25.452" level="INFO">Typing text 'HELLO' into text field '//textarea[@id='giftcard_2_Message']'.</msg>
+<status status="PASS" endtime="20200824 13:46:25.547" starttime="20200824 13:46:25.451"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${ADD_TO_CART_GIFTCARD2}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:25.548" level="INFO">Clicking element '//input[contains(@value,'Add to cart')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:25.604" starttime="20200824 13:46:25.547"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CART}</arg>
+</arguments>
+<msg timestamp="20200824 13:46:25.605" level="INFO">Clicking element '//a[contains(text(),'Shopping cart')]'.</msg>
+<status status="PASS" endtime="20200824 13:46:26.567" starttime="20200824 13:46:25.604"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>ADD TO CART SUCCESSFUL</arg>
+</arguments>
+<status status="PASS" endtime="20200824 13:46:26.568" starttime="20200824 13:46:26.568"></status>
+</kw>
+<status status="PASS" endtime="20200824 13:46:26.569" starttime="20200824 13:45:52.676"></status>
+</kw>
+<status status="PASS" endtime="20200824 13:46:26.569" critical="yes" starttime="20200824 13:45:52.675"></status>
+</test>
+<status status="PASS" endtime="20200824 13:46:26.570" starttime="20200824 13:45:52.368"></status>
+</suite>
+<status status="PASS" endtime="20200824 13:46:26.573" starttime="20200824 13:45:52.324"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Demo" pass="1">Demo</stat>
+<stat fail="0" id="s1-s1" name="First" pass="1">Demo.First</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
